@@ -167,7 +167,7 @@ function updateToolTip(chosenXAxis, circlesGroup) {
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .classed("axis-text", true)
-        .text("Number of Billboard 500 Hits");
+        .text("Lacks Healthcare (%)");
 
     // updateToolTip function above csv import
     circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
