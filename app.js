@@ -92,7 +92,7 @@ function renderCircles(circlesGroup, newXScale, chosenXAxis, newYScale, chosenYA
     return circlesGroup;
   }
 
-// function used for updating state labels with a transitions
+// function used for updating state labels with a transition
 function renderText(textGroup, newXScale, chosenXAxis, newYScale, chosenYAxis) {
 
     textGroup.transition()
@@ -103,7 +103,7 @@ function renderText(textGroup, newXScale, chosenXAxis, newYScale, chosenYAxis) {
     return textGroup;
 }
 
-// function used for updating circles group with new tooltip (chosenYAxis?????)
+// function used for updating circles group with new tooltip 
 function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
     let label  = "";
     if (chosenXAxis === "poverty") {
@@ -289,7 +289,6 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 
             // console.log(chosenXAxis)
 
-            // functions here found above csv import
             // updates x scale for new data
             xLinearScale = xScale(journalismData, chosenXAxis);
 
@@ -343,7 +342,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
         }
     });
 
-    //y axis labels event listener
+    // y-axis labels event listener
         yLabelsGroup.selectAll("text")
         .on("click", function() {
             //get value of selection
